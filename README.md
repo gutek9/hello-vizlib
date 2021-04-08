@@ -11,3 +11,5 @@
   ```
   chmod +x run.sh; ./run.sh
   ```
+
+* To test just go to http://localhost:8080

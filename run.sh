@@ -18,5 +18,5 @@
 
 set -o nounset                              # Treat unset variables as an error
 
-docker-compose -f deploy/compose.yml
+docker-compose -f deploy/docker-compose.yml up -d
 

@@ -1,1 +1,21 @@
-#
+version: '2'
+
+services:
+  haproxy:
+    image: haproxy:alpine
+    container_name: haproxy
+    restart: always
+    ports:
+      - "8080:80"
+    volumes:
+      - ./webapp.cfg:/usr/local/etc/haproxy/haproxy.cfg
+
+  webapp-1:
+    image: gutek9/nginx-vizlib
+    environment:
+     - NGINX_PORT=80
+
+  webapp-2:
+    image: gutek9/nginx-vizlib
+    environment:
+     - NGINX_PORT=80
