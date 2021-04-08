@@ -2,6 +2,8 @@
 
 ## Prerequisites
 
+> This only applies if you want to check it on your local machine.
+
 * docker 
 * docker-compose [https://docs.docker.com/compose/install/]
 
